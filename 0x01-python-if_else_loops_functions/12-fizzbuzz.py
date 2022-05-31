@@ -2,7 +2,7 @@
 def fizzbuzz():
     for number in range(1, 101):
         if not number % 3 and not number % 5:
-           print("FizzBuzz", end=" ")
+            print("FizzBuzz", end=" ")
         elif not number % 3:
             print("Fizz", end=" ")
         elif not number % 5:
