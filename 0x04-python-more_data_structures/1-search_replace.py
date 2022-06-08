@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def search_replace(my_list, search, replace):
 
 
@@ -8,6 +9,3 @@ def search_replace(my_list, search, replace):
         else:
             new_list.append(item)
     return new_list
-
-
-print(search_replace([4, 5, 5, 6, 9, 0, 5, 5], 0, 'badass'))

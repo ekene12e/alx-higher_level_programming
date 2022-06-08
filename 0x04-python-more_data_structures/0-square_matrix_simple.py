@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     new_list = []
     for my_list in matrix:
@@ -6,14 +7,3 @@ def square_matrix_simple(matrix=[]):
             sub_list.append(i * i)
         new_list.append(sub_list)
     return new_list
-
-
-matrix = [
-    
-    [1, 2, 3], 
-    [1, 2, 3],
-    [3, 7, 8],
-    [77, 66, 33]
-]
-
-print(square_matrix_simple(matrix))
