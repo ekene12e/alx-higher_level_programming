@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 
+
 def list_division(my_list_1, my_list_2, list_length):
     """Function divides list1 by components of list2, returns new list of quotients"""
    
+
     div_list = []
     for i in range(list_length):
         try:
             div = my_list_1[i]/my_list_2[i]
             #div_list.append(div)
-        except (ValueError, TypeError):
+        except (TypeError):
             div = 0
             print("wrong type")
         except IndexError:
