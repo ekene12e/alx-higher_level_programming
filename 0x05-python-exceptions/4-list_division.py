@@ -15,5 +15,5 @@ def list_division(my_list_1, my_list_2, list_length):
             print("division by zero")
             div_list.append(0)
         finally:
-            pass 
+            print(end='')
     return div_list
