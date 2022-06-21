@@ -81,5 +81,8 @@ class Square:
                 print(" " * self.__position[0] + "#" * self.__size)
 
     def __str__(self):
-       self.my_print()
-       return ""
+        """
+        Prints the square using #
+        """
+        self.my_print()
+        return ""
