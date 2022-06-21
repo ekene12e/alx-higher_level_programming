@@ -23,7 +23,7 @@ class Square:
 
             Returns:
                 int: size of square
-            """            
+            """
             return self.__size
 
         @size.setter
@@ -36,7 +36,7 @@ class Square:
             Raises:
                 TypeError: error
                 ValueError: error
-            """            
+            """
             if not isinstance(value, int):
                 raise TypeError('size must be an integer')
             if value < 0:
