@@ -10,13 +10,13 @@ class Square:
     '''
     def __init__(self, size=0, position=(0, 0)):
         """
-        INSTATIATES a new square
+        Instantiates a new square
 
         Args:
             size (int): size of square
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
