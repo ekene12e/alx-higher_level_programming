@@ -1,0 +1,28 @@
+===========================
+How to Use 5-text_indentation.py
+===========================
+
+This module defines the  function ``text_indentation(text)``.
+
+Usage
+=====
+
+``text_indentation(...)``` prints a customized text
+
+::
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+    >>> text_indentation("hello: I am Ekene. whats your name? boy")
+    hello:
+    <BLANKLINE>
+    I am Ekene.
+    <BLANKLINE>
+    whats your name?
+    <BLANKLINE>
+    boy
+
+    >>> text_indentation(787)
+    Traceback (most recent call last):
+            ...
+    TypeError: text must be a string
