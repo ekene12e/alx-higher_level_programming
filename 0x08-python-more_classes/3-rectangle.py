@@ -45,6 +45,8 @@ class Rectangle:
         return (self.__width + self.__height) * 2
 
     def __str__(self):
+        if 0 in (self.__width, self.__height):
+            return ""
         for i in range(self.__height):
             rect = []
             for i in range(self.__height):
