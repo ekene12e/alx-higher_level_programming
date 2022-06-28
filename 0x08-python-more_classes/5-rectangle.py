@@ -62,7 +62,7 @@ class Rectangle:
         return f'Rectangle({self.__width}, {self.__height})'
 
     def __del__(self):
-            '''method: __del__
-            deletes instance of Rectangle class, and prints "bye" message
-            '''
-            print("Bye rectangle...")
+        '''method: __del__
+        deletes instance of Rectangle class, and prints "bye" message
+        '''
+        print("Bye rectangle...")
