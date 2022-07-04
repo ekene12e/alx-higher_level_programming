@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Looks up the attributes of a given class
+"""A class with a print sorted function
 """
 
 
