@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""A class with a print sorted function
-"""
+
+"""Defines an empty class BaseGeometry."""
 
 
 class BaseGeometry:
+    """Represent base geometry."""
     pass
