@@ -1,0 +1,3 @@
+-- lists tables
+SHOW TABLES;
+
