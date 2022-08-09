@@ -1,3 +1,3 @@
--- Describes a table
-DESCRIBE TABLE IF EXISTS `first_table`;
+-- Prints the full description of the table first_table.
+SHOW CREATE TABLE `first_table`;
 
