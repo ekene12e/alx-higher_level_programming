@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 git add .
-git commit -m "task"
+git commit -m "tasks 7 - 20"
 git push
 
