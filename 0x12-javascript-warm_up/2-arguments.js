@@ -6,5 +6,5 @@ if (n === 3) {
 } else if (n >= 4) {
   console.log('Arguments found');
 } else {
-  console.log('No Argument');
+  console.log('No argument');
 }
