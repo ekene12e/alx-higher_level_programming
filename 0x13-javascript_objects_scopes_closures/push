@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+git pull
 chmod u+x *.js
 git add .
 git commit -m "alx task"
