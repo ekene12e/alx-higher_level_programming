@@ -20,7 +20,7 @@ if __name__ == '__main__':
          FROM states
          WHERE name=%s
          ORDER BY id ASC"""
-    cur.execute(cmd, (sys.argv[4],))
+    cur.execute(cmd, (sys.argv[4]))
     selected_states = cur.fetchall()
     for state in selected_states:
         print(state)
