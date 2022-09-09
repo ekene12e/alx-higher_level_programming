@@ -11,7 +11,6 @@ if __name__ == '__main__':
     user = sys.argv[1]
     password = sys.argv[2]
     db_name = sys.argv[3]
-    search_name = sys.argv[4]
     db = MySQLdb.connect(host='localhost',
                          user=user,
                          passwd=password,
