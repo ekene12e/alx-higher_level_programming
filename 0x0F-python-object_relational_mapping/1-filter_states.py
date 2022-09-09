@@ -5,21 +5,22 @@ import MySQLdb
 import sys
 
 if __name__ == '__main__':
-	user = sys.argv[1]
-	password = sys.argv[2]
-	db_name = sys.argv[3]
-	db = MySQLdb.connect(host='localhost',
-						user=user,
-						passwd=password,
-						db=db_name,
-						port=3306)
-	cur = db.cursor()
-	cur.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
-	selected_states = cur.fetchall()
+    user = sys.argv[1]
+    password = sys.argv[2]
+    db_name = sys.argv[3]
+    db = MySQLdb.connect(host='localhost',
+                         user=user,
+                         passwd=password,
+                         db=db_name,
+                         port=3306)
+    cur = db.cursor()
+    cur.execute("""SELECT id,
+                    name FROM states
+                    WHERE name LIKE 'N%'
+                    ORDER BY id ASC""")
+    selected_states = cur.fetchall()
+    for state in selected_states:
+        print(state)
 
-	for state in selected_states:
-		print(state)
-
-	cur.close()
-	db.close()
-
+    cur.close()
+    db.close()
