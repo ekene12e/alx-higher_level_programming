@@ -13,7 +13,7 @@ db = MySQLdb.connect(host='localhost',
                     db=db_name,
                     port=3306)
 cur = db.cursor()
-cur.execute("SELECT id, name FROM states WHERE state LIKE 'B%'\
+cur.execute("SELECT id, name FROM states WHERE name LIKE 'B%'\
     ORDER BY id ASC")
 selected_states = cur.fetchall()
 
