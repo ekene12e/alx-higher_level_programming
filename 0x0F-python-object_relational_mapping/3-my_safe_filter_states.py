@@ -19,11 +19,11 @@ if __name__ == '__main__':
     cur = db.cursor()
     cur.execute("""SELECT id,
                     name FROM states
-                    WHERE name=%s
-                    ORDER BY id ASC""", search_name)
+                    ORDER BY id ASC""")
     selected_states = cur.fetchall()
     for state in selected_states:
-        print(state)
+        if (state[1] == search_name):
+            print(state)
 
     cur.close()
     db.close()
