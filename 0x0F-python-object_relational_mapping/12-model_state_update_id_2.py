@@ -15,6 +15,6 @@ if __name__ == "__main__":
     session = Session()
 
     result = session.query(State).filter(State.id == 7)
-    result.update({"name": ("Washington DC")})
+    result.update({"name": ("New Mexico")})
 
     session.commit()
