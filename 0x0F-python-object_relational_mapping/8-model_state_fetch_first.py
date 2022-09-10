@@ -24,4 +24,3 @@ if __name__ == "__main__":
             isnull = False
     if isnull:
         print('Nothing')
-
