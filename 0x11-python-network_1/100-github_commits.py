@@ -10,8 +10,9 @@ if __name__ == '__main__':
     a = sys.argv[1]
     b = sys.argv[2]
     r = requests.get(f'https://api.github.com/repos/{b}/{a}/commits')
-    count = 1
-    while(count <= 10):
-        print(r.json()[count]['commit']['tree']['sha'], end='')
-        print(f": {r.json()[count]['commit']['author']['name']}")
-        count = count + 1
+    commits = r.json()
+    try:
+        for i in range(10):
+            print(f"{commits[i]['sha']}: {commits[i]['commit']['author']['name']}")
+    except IndexError:
+        pass
