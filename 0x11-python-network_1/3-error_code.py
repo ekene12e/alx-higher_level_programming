@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Takes in a url and print
 a content of the header"""
-from email import message
 from urllib.request import Request, urlopen, URLError
 import sys
 
