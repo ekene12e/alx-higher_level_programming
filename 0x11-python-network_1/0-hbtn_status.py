@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """A sxript that fetches an url using urllib"""
 
