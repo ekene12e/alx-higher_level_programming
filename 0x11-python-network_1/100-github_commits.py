@@ -1,18 +1,17 @@
 #!/usr/bin/python3
-"""Takes in a github username and
-repo name and prints the last10 commits"""
+"""list 10 commits (from the most recent to oldest) of the
+repository "rails" by user "rails" you must use the githubapi
+Print all commits by: <sha>: <author name>` (one by line)
+"""
+if __name__ == "__main__":
+    import requests
+    import sys
 
-import requests
-import sys
-
-
-if __name__ == '__main__':
-    a = sys.argv[1]
-    b = sys.argv[2]
-    r = requests.get(f'https://api.github.com/repos/{b}/{a}/commits')
-    commits = r.json()
-    try:
-        for i in range(10):
-            print(f"{commits[i]['sha']}: {commits[i]['commit']['author']['name']}")
-    except IndexError:
-        pass
+    r = requests.get('https://api.github.com/repos/{}/{}/commits'
+                     .format(sys.argv[2], sys.argv[1]))
+    if r.status_code >= 400:
+        print('None')
+    else:
+        for com in r.json()[:10]:
+            print("{}: {}".format(com.get('sha'),
+                                  com.get('commit').get('author').get('name')))
