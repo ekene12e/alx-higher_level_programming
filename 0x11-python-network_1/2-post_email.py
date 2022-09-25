@@ -2,6 +2,7 @@
 """Takes in a url and email address
 then posts the email to the url as data"""
 import urllib.request
+import urllib.parse
 import sys
 
 if __name__ == '__main__':
