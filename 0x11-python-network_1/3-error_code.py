@@ -12,7 +12,5 @@ if __name__ == '__main__':
             msg = res.read()
             print(msg.decode('utf-8'))
     except URLError as e:
-        if hasattr(e, 'reason'):
-            print('Reason: ', e.reason)
-        elif hasattr(e, 'code'):
+        if hasattr(e, 'code'):
             print('Error code: ', e.code)
