@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Takes in a url and prints 
+"""Takes in a url and print
 a content of the header"""
 import urllib.request
 import sys
