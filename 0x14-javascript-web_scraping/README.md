@@ -1,1 +1,1 @@
-web scrappng
+web scrapping
